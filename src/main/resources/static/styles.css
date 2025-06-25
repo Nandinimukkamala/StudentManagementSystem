@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+	
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.delete {
+    background-color: red;
+}
+
+button.delete:hover {
+    background-color: darkred;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+#deleteAllBtn, #getStudentsBtn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#studentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal column width */
+}
+
+#studentsTable th, #studentsTable td {
+    padding: 12px; /* Increased padding for better readability */
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle; /* Ensure vertical alignment for better consistency */
+    width: 25%; /* Set width to ensure even distribution of space for each column */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+#studentsTable td {
+    text-align: left; /* Default text-align for data cells */
+}
+
+
+/* Optional: Align the checkbox column to center */
+#studentsTable td input[type="checkbox"] {
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+}
+
+
+#deleteAllBtn {
+    background-color: red;
+}
+
+#deleteAllBtn:hover {
+    background-color: darkred;
+}
+
+#getStudentsBtn {
+    background-color: #4CAF50;
+}
+
+#getStudentsBtn:hover {
+    background-color: #45a049;
+}
+/* styles.css */
+
+/* Toast container */
+#toast-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual toast notification */
+.toast {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Show the toast */
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style for success message */
+.toast.success {
+    background-color: #4CAF50;
+}
+
+/* Style for error message */
+.toast.error {
+    background-color: #f44336;
+}
+
+/* Style for info message */
+.toast.info {
+    background-color: #2196F3;
+}
+

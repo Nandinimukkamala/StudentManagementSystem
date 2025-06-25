@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS if needed -->
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Student</h1>
+
+        <form id="editStudentForm">
+            <input type="hidden" id="studentId" />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required /><br />
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" required /><br />
+			<label for="graduate">Graduate:</label>
+			 <input type="text" id="graduate" required /><br />
+
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+	<div id="toast-container"></div>
+
+	    <button onclick="showToast()">Show Toast</button>
+
+    <script src="edit.js"></script> <!-- Link to external JavaScript file for editing -->
+</body>
+</html>
